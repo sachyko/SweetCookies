@@ -1,0 +1,50 @@
+.feature {
+	margin: 100px 50px;
+}
+
+.feature h1 {
+	font-family: "Libre Baskerville", serif;
+	color: #372414;
+	width: 500px;
+	font-size: 45px;
+}
+
+.feature p {
+	font-family: "Nunito Sans", serif;
+	color: #674831;
+	font-style: italic;
+	/* width: 1300px; */
+	font-size: 25px;
+}
+
+.article {
+	display: flex;
+}
+
+.feature1,
+.feature2,
+.feature3 {
+	width: 30%;
+	margin-top: 15px;
+}
+.feature1 h2,
+.feature2 h2,
+.feature2 h2 {
+	font-family: "EB Garamond", serif;
+	color: #3d1f14;
+	font-size: 33px;
+}
+
+.feature1 p,
+.feature2 p,
+.feature2 p {
+	font-family: "Nunito Sans", serif;
+	color: #674831;
+	font-size: 22px;
+	width: 300px;
+}
+
+.feature i {
+	font-size: 25px;
+	color: #b7a087;
+}

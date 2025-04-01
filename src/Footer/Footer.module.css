@@ -3,11 +3,11 @@
 	display: flex;
 	justify-content: space-between; /*to push the image on the left and the links on the right */
 	font-family: "EB Garamond", serif;
+	margin: 100px 50px;
 }
 
 .footer img {
 	height: 100px;
-	margin: 10px 30px;
 	border-radius: 50%;
 }
 
