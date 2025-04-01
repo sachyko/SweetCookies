@@ -1,0 +1,26 @@
+.navbar {
+	color: #372414;
+	display: flex;
+	justify-content: space-between; /*to push the image on the left and the links on the right */
+	font-family: "EB Garamond", serif;
+}
+
+.navbar img {
+	height: 100px;
+	margin: 10px 30px;
+	border-radius: 50%;
+}
+
+.navlinks {
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 40px;
+	margin-right: 30px;
+	font-size: 25px;
+}
+
+.navlinks li {
+	text-decoration: none;
+	padding: 5px 10px;
+}

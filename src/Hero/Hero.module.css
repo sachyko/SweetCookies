@@ -1,0 +1,39 @@
+.hero {
+	display: flex;
+	margin: 40px 50px;
+}
+
+.hero img {
+	height: 500px;
+	margin-top: 10px;
+}
+
+.hero article {
+	margin-top: 5px;
+}
+.hero h1 {
+	font-family: "Libre Baskerville", serif;
+	color: #372414;
+	font-size: 60px;
+	text-align: center;
+	width: 850px;
+}
+
+.hero p {
+	font-family: "Nunito Sans", serif;
+	color: #674831;
+	width: 750px;
+	text-align: left;
+	margin-left: 90px;
+	font-style: italic;
+	font-size: 35px;
+}
+
+.hero button {
+	background: none;
+	border: none;
+	font-family: "EB Garamond", serif;
+	color: #372414;
+	font-size: 30px;
+	margin-left: 80px;
+}

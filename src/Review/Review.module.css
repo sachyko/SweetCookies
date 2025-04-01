@@ -1,0 +1,36 @@
+.review {
+	margin: 40px 50px;
+}
+
+.review h1 {
+	font-family: "Libre Baskerville", serif;
+	color: #674831;
+}
+
+.customerReview {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.review h2 {
+	font-family: "Nunito Sans", serif;
+	color: #674831;
+	width: 700px;
+	font-weight: 550;
+	font-size: 30px;
+	text-align: center;
+}
+
+.review p {
+	font-family: "EB Garamond", serif;
+	color: #825a3c;
+	font-style: italic;
+	font-size: 25px;
+}
+.stars {
+	color: #b7a087;
+	display: flex;
+	gap: 15px;
+	font-size: 35px;
+}
