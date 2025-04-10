@@ -1,0 +1,53 @@
+.cookiesInfo {
+	margin: 100px 50px;
+}
+
+.cookiesInfo h1 {
+	font-family: "Libre Baskerville", serif;
+	color: #372414;
+	font-size: 55px;
+	text-align: center;
+}
+
+.cookiesInfo p {
+	font-family: "Nunito Sans", serif;
+	color: #674831;
+	font-style: italic;
+	font-size: 20px;
+	text-align: center;
+}
+
+.cookiesInfo img {
+	height: 450px;
+	width: 100%;
+	/* margin-top: -px; */
+	border-radius: 25px;
+	border: 5px solid #b7a087;
+	padding: 7px;
+}
+
+.cookiesData {
+	display: flex;
+}
+
+.cookiesData h2 {
+	font-family: "EB Garamond", serif;
+	color: #3d1f14;
+	font-size: 40px;
+	padding-top: 50px;
+	padding-left: 30px;
+}
+
+.cookiesData p {
+	width: 600px;
+	padding-left: 30px;
+	text-align: left;
+}
+
+.textSection {
+	margin-right: 100px;
+	margin-top: 40px;
+	background-color: #b7a087;
+	border-radius: 25px;
+	margin-left: 90px;
+}

@@ -1,0 +1,126 @@
+.cookieForm {
+	margin: 100px 50px;
+	background-color: #d0b396;
+	border-radius: 40px;
+	height: 610px;
+}
+.cookieForm h1 {
+	font-family: "Libre Baskerville", serif;
+	color: #372414;
+	font-size: 45px;
+	text-align: center;
+	padding-top: 20px;
+}
+.cookieForm p {
+	font-family: "Nunito Sans", serif;
+	color: #674831;
+	font-style: italic;
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 30px; /* Added space below the paragraph */
+}
+
+.cookieForm img {
+	width: 33px;
+	padding-right: 10px;
+}
+
+.cookieForm button {
+	margin: 5px;
+}
+
+.cookieForm h3 {
+	font-family: "EB Garamond", serif;
+	color: #3d1f14;
+	font-size: 20px;
+}
+
+.cookieForm span {
+	font-family: "Nunito sans", serif;
+	color: #3d1f14;
+	font-style: italic;
+}
+
+.cookieForm button {
+	background-color: #f7ebdf;
+	border: none;
+	padding: 10px 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 10px;
+}
+
+.orderSectionContainer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.orderSection {
+	padding-left: 30px;
+}
+
+.userFieldContainer {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 15px;
+	justify-content: space-between;
+	width: 20%;
+}
+
+.userFields {
+	flex: 1;
+	min-width: 250px; /* Ensures input fields are spaced well */
+}
+
+.userFields label {
+	font-family: "Nunito sans", serif;
+	color: #3d1f14;
+	font-style: italic;
+	margin-bottom: 5px; /* Added some space below labels */
+}
+
+.userFields input {
+	border: none;
+	background: transparent;
+	border-bottom: 2px solid #ac746c;
+	width: 140%;
+	outline: none;
+	font-size: 15px;
+	color: #674831;
+	margin-bottom: 20px;
+	padding: 10px 5px; /* Added padding for input fields */
+}
+
+.mixPack {
+	padding-right: 50px;
+}
+
+.mixPack p {
+	font-size: 20px;
+	font-family: "Nunito Sans", serif;
+	color: #674831;
+}
+
+.userFieldContainer button {
+	background: linear-gradient(90deg, #3d1f14, #674831);
+	border: none;
+	border-radius: 30px;
+	cursor: pointer;
+	box-shadow: 0px 4px 6px rgba(190, 165, 165, 0.2);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	font-family: "Libre Baskerville", serif;
+	color: #dac1b1;
+	font-size: 15px;
+	padding: 15px 60px;
+	text-decoration: none;
+	align-self: center;
+}
+
+.totalPrice {
+	font-family: "EB Garamond", serif;
+	color: #3d1f14;
+	font-weight: 700;
+	font-size: 20px;
+	margin-left: 50px;
+	margin-top: -60px;
+}

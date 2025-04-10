@@ -15,7 +15,7 @@ const Feature = () => {
 				<div className={styles.feature1}>
 					<i class="fa-solid fa-cookie-bite"></i>
 					<h2>Choose Your Perfect Size</h2>
-					<p>Select from our generous big packs or petite small packs.</p>
+					<p>Select from our generous big size or petite small packs.</p>
 				</div>
 
 				<div className={styles.feature2}>

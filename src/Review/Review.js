@@ -17,7 +17,7 @@ const Review = () => {
 					" Sweet Street's cookies are delightful treat that brighten my day! I
 					have to order 10 more and share it with my friends. "
 				</h2>
-				<p> Rhodney Demellites | Shizuoka, Japan</p>
+				<p> Rhodney | Shizuoka, Japan</p>
 			</div>
 		</div>
 	);

@@ -20,7 +20,21 @@
 	font-size: 25px;
 }
 
+.navlinks a {
+	text-decoration: none;
+	color: inherit;
+}
 .navlinks li {
 	text-decoration: none;
 	padding: 5px 10px;
+}
+
+.navlinks a:hover {
+	color: #cca771;
+	text-decoration: underline; /* Lighter color on hover for contrast */
+}
+
+.navlinks a:active {
+	color: #3d1f14;
+	transform: scale(0.95); /* Slightly shrink to mimic a "pressed" effect */
 }

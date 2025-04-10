@@ -6,14 +6,13 @@
 	font-family: "Libre Baskerville", serif;
 	color: #372414;
 	width: 500px;
-	font-size: 45px;
+	font-size: 55px;
 }
 
 .feature p {
 	font-family: "Nunito Sans", serif;
 	color: #674831;
 	font-style: italic;
-	/* width: 1300px; */
 	font-size: 25px;
 }
 
@@ -29,7 +28,7 @@
 }
 .feature1 h2,
 .feature2 h2,
-.feature2 h2 {
+.feature3 h2 {
 	font-family: "EB Garamond", serif;
 	color: #3d1f14;
 	font-size: 33px;

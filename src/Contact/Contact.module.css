@@ -1,0 +1,93 @@
+.contact {
+	margin: 100px 50px;
+}
+
+.contactContainer {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	flex-wrap: wrap;
+}
+.contact h2 {
+	font-family: "Libre Baskerville", serif;
+	color: #674831;
+	font-size: 40px;
+}
+
+.tagline {
+	width: 650px;
+	padding-bottom: 10px;
+	margin-left: 85px;
+}
+
+.socials {
+	margin-left: 90px;
+	margin-top: 10px;
+}
+.socials p {
+	font-family: "Nunito Sans", serif;
+	color: #674831;
+	font-size: 23px;
+}
+
+.socials h3 {
+	font-family: "EB Garamond", serif;
+	color: #3d1f14;
+	font-size: 45px;
+}
+
+.socials i {
+	margin-right: 5px;
+}
+
+/* contact form styles */
+.contactForm {
+	background-color: #e3d1c0;
+	padding: 20px;
+	border-radius: 10px;
+	margin-top: -150px;
+}
+
+.contactForm label {
+	display: block;
+	margin-bottom: 8px;
+	font-family: "Nunito Sans", serif;
+	color: #674831;
+}
+
+.contactForm textarea,
+.contactForm input {
+	width: 95%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-family: "Nunito Sans", serif;
+	color: #3d1f14;
+}
+
+.contactForm textarea {
+	resize: none;
+	min-height: 100px;
+}
+
+.contactForm button {
+	cursor: pointer;
+	margin: 15px;
+	background: linear-gradient(90deg, #3d1f14, #674831);
+	border: none;
+	border-radius: 30px;
+	cursor: pointer;
+	box-shadow: 0px 4px 6px rgba(190, 165, 165, 0.2);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	font-family: "Libre Baskerville", serif;
+	color: #dac1b1;
+	font-size: 25px;
+	padding: 18px 90px;
+	text-decoration: none;
+	display: inline-block;
+	flex-shrink: 0;
+}
+
+.contactForm h2 {
+	text-align: left;
+}

@@ -5,6 +5,8 @@
 .review h1 {
 	font-family: "Libre Baskerville", serif;
 	color: #674831;
+	font-size: 55px;
+	padding-top: 15px;
 }
 
 .customerReview {
