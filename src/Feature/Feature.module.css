@@ -18,6 +18,8 @@
 
 .article {
 	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .feature1,

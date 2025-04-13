@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import styles from "./Feature.module.css";
 
 const Feature = () => {
@@ -12,23 +13,41 @@ const Feature = () => {
 			</p>
 
 			<article className={styles.article}>
-				<div className={styles.feature1}>
+				<motion.div
+					className={styles.feature1}
+					initial={{ opacity: 0, y: 20 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					viewport={{ once: false }}
+					transition={{ duration: 2 }}
+				>
 					<i class="fa-solid fa-cookie-bite"></i>
 					<h2>Choose Your Perfect Size</h2>
 					<p>Select from our generous big size or petite small packs.</p>
-				</div>
+				</motion.div>
 
-				<div className={styles.feature2}>
+				<motion.div
+					className={styles.feature2}
+					initial={{ opacity: 0, y: 20 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					viewport={{ once: false }}
+					transition={{ duration: 2, delay: 0.5 }}
+				>
 					<i class="fa-solid fa-cookie-bite"></i>
 					<h2>Affordable Treats for Every Occasion</h2>
 					<p>Enjoy premium cookies without breaking the bank.</p>
-				</div>
+				</motion.div>
 
-				<div className={styles.feature3}>
+				<motion.div
+					className={styles.feature3}
+					initial={{ opacity: 0, y: 20 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					viewport={{ once: false }}
+					transition={{ duration: 2, delay: 1 }}
+				>
 					<i class="fa-solid fa-cookie-bite"></i>
 					<h2>Order Now for Fresh Cookie Delivery</h2>
 					<p>Experience the joy of cookie delivered to your door.</p>
-				</div>
+				</motion.div>
 			</article>
 		</div>
 	);

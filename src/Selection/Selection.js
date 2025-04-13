@@ -10,8 +10,9 @@ const Selection = ({ flavor, description, image }) => {
 			<div className={styles.cookiesData}>
 				<div className={styles.textSection}>
 					<h2>{flavor}</h2>
-					<p> {description} </p>
+					<p>{description} </p>
 				</div>
+
 				<div className={styles.imageSection}>
 					<img src={image} alt={flavor} />
 				</div>

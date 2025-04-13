@@ -187,7 +187,7 @@ const OrderForm = () => {
 					<div className={styles.mixPack}>
 						<p>Select up to {order.petitePack.MixAndMatch * 4} flavors:</p>
 						{flavors.map((flavor) => {
-							const selectedCount = order.mixAndMatchFlavors[flavor.name] || 0;
+							// const selectedCount = order.mixAndMatchFlavors[flavor.name] || 0;
 							return (
 								<div key={flavor.name} className={styles.flavorOption}>
 									<img src={flavor.image} alt={flavor.name} />
