@@ -38,3 +38,45 @@
 	color: #3d1f14;
 	transform: scale(0.95); /* Slightly shrink to mimic a "pressed" effect */
 }
+
+@media (min-width: 320px) and (max-width: 374px) {
+	.navlinks {
+		font-size: 12px;
+		margin-left: -48px;
+		margin-top: 24px;
+		margin-bottom: 5px;
+	}
+
+	.navbar img {
+		height: 55px;
+		margin: 14px 20px;
+	}
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+	.navlinks {
+		font-size: 16px;
+		margin-left: -48px;
+		margin-top: 24px;
+		margin-bottom: 5px;
+	}
+
+	.navbar img {
+		height: 65px;
+		margin: 14px 20px;
+	}
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+	.navlinks {
+		font-size: 19px;
+		margin-left: -40px;
+		margin-top: 24px;
+		margin-bottom: 5px;
+	}
+
+	.navbar img {
+		height: 69px;
+		margin: 14px 20px;
+	}
+}

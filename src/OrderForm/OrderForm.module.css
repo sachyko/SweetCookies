@@ -86,6 +86,7 @@
 	font-family: "Nunito sans", serif;
 	color: #3d1f14;
 	font-style: italic;
+	font-size: 20px;
 	margin-bottom: 5px; /* Added some space below labels */
 }
 
@@ -143,4 +144,301 @@
 	font-size: 20px;
 	margin-left: 50px;
 	margin-top: -60px;
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+	.cookieForm {
+		margin: 20px 10px;
+		padding: 10px;
+		height: auto;
+		border-radius: 20px;
+	}
+
+	.cookieForm h1 {
+		font-size: 15px;
+	}
+
+	.cookieForm h3 {
+		font-size: 15px;
+	}
+	.cookieForm p {
+		font-size: 15px;
+		margin-bottom: 20px;
+	}
+
+	.orderSectionContainer {
+		flex-direction: column;
+		padding: 0;
+	}
+
+	.orderSection {
+		padding-left: 0;
+		margin-bottom: 20px;
+	}
+
+	.userFieldContainer {
+		flex-direction: column;
+		width: 95%;
+		margin-top: 0;
+	}
+
+	.userFields {
+		min-width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.userFields input {
+		width: 100%;
+		font-size: 13px;
+		padding: 8px 4px;
+	}
+
+	.mixPack {
+		padding: 0;
+	}
+
+	.mixPack p {
+		font-size: 14px;
+	}
+
+	.userFieldContainer button {
+		width: 100%;
+		font-size: 14px;
+		padding: 12px 20px;
+		margin-top: 10px;
+	}
+
+	.totalPrice {
+		font-size: 15px;
+		margin-left: 0;
+		margin-top: 10px;
+		text-align: center;
+	}
+
+	.cookieForm span {
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+	.cookieForm {
+		margin: 35px 20px;
+		padding: 10px;
+		height: auto;
+		border-radius: 20px;
+	}
+
+	.cookieForm h1 {
+		font-size: 19px;
+	}
+
+	.cookieForm h3 {
+		font-size: 19px;
+	}
+	.cookieForm p {
+		font-size: 15px;
+		margin-bottom: 20px;
+	}
+
+	.orderSectionContainer {
+		flex-direction: column;
+		padding: 0;
+	}
+
+	.orderSection {
+		padding-left: 0;
+		margin-bottom: 20px;
+	}
+
+	.userFieldContainer {
+		flex-direction: column;
+		width: 95%;
+		margin-top: 0;
+	}
+
+	.userFields {
+		min-width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.userFields input {
+		width: 100%;
+		font-size: 15px;
+		padding: 8px 4px;
+	}
+
+	.mixPack {
+		padding: 0;
+	}
+
+	.mixPack p {
+		font-size: 15px;
+	}
+
+	.userFieldContainer button {
+		width: 100%;
+		font-size: 15px;
+		padding: 12px 15px;
+		margin-top: 10px;
+	}
+
+	.totalPrice {
+		font-size: 15px;
+		margin-left: 0;
+		margin-top: 10px;
+		text-align: center;
+	}
+
+	.cookieForm span {
+		font-size: 15px;
+	}
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+	.cookieForm {
+		margin: 35px 20px;
+		padding: 10px;
+		height: auto;
+		border-radius: 20px;
+	}
+
+	.cookieForm h1 {
+		font-size: 20px;
+	}
+
+	.cookieForm h3 {
+		font-size: 20px;
+	}
+	.cookieForm p {
+		font-size: 17px;
+		margin-bottom: 20px;
+	}
+
+	.orderSectionContainer {
+		flex-direction: column;
+		padding: 0;
+	}
+
+	.orderSection {
+		padding-left: 0;
+		margin-bottom: 20px;
+	}
+
+	.userFieldContainer {
+		flex-direction: column;
+		width: 95%;
+		margin-top: 0;
+	}
+
+	.userFields {
+		min-width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.userFields input {
+		width: 100%;
+		font-size: 17px;
+		padding: 8px 4px;
+	}
+
+	.mixPack {
+		padding: 0;
+	}
+
+	.mixPack p {
+		font-size: 17px;
+	}
+
+	.userFieldContainer button {
+		width: 100%;
+		font-size: 17px;
+		padding: 12px 15px;
+		margin-top: 10px;
+	}
+
+	.totalPrice {
+		font-size: 17px;
+		margin-left: 0;
+		margin-top: 10px;
+		text-align: center;
+	}
+
+	.cookieForm span {
+		font-size: 15px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+	.cookieForm {
+		margin: 35px 40px;
+		padding: 10px;
+		height: auto;
+		border-radius: 20px;
+	}
+
+	.cookieForm h1 {
+		font-size: 40px;
+	}
+
+	.cookieForm h3 {
+		font-size: 25px;
+	}
+	.cookieForm p {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+
+	.orderSectionContainer {
+		flex-direction: column;
+		padding: 0;
+		padding-left: 10px;
+	}
+
+	.orderSection {
+		padding-left: 0;
+		margin-bottom: 20px;
+	}
+
+	.userFieldContainer {
+		flex-direction: column;
+		width: 95%;
+		margin-top: 0;
+	}
+
+	.userFields {
+		min-width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.userFields input {
+		width: 100%;
+		font-size: 20px;
+		padding: 8px 4px;
+	}
+
+	.mixPack {
+		padding: 0;
+	}
+
+	.mixPack p {
+		font-size: 20px;
+	}
+
+	.userFieldContainer button {
+		width: 100%;
+		font-size: 20px;
+		padding: 12px 15px;
+		margin-top: 10px;
+	}
+
+	.totalPrice {
+		font-size: 20px;
+		margin-left: 0;
+		margin-top: 10px;
+		text-align: center;
+	}
+
+	.cookieForm span {
+		font-size: 17px;
+	}
 }

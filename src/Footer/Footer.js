@@ -46,7 +46,10 @@ const Footer = () => {
 						@sweet.street.jpn
 					</li>
 				</div>
-				<span>@ 2025 Sweet Streets All rights reserved</span>
+				<div className={styles.tagline}>
+					<p>"Sweetness in every bite—crafted with care, baked with heart."</p>
+					<span>@ 2025 Sweet Streets All rights reserved</span>
+				</div>
 			</div>
 		</div>
 	);

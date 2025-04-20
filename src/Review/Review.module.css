@@ -4,7 +4,7 @@
 
 .review h1 {
 	font-family: "Libre Baskerville", serif;
-	color: #674831;
+	color: #372414;
 	font-size: 55px;
 	padding-top: 15px;
 }
@@ -30,7 +30,7 @@
 .review p {
 	font-family: "EB Garamond", serif;
 	color: #825a3c;
-	font-style: italic;
+	/* font-style: italic; */
 	font-size: 25px;
 	text-align: center;
 }
@@ -89,4 +89,140 @@
 
 .fadeOut {
 	opacity: 0;
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+	.review {
+		margin: 35px 20px;
+	}
+
+	.review h1 {
+		font-size: 15px;
+	}
+
+	.review h2 {
+		width: 220px;
+		font-size: 13px;
+	}
+	.review p {
+		font-size: 15px;
+	}
+
+	.stars {
+		font-size: 20px;
+	}
+
+	.navButtons {
+		gap: 235px;
+		margin-top: -240px;
+		margin-bottom: 100px;
+	}
+
+	.arrow {
+		font-size: 10px;
+		padding: 5px 10px;
+		margin: 0;
+	}
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+	.review {
+		margin: 35px 20px;
+	}
+
+	.review h1 {
+		font-size: 19px;
+	}
+
+	.review h2 {
+		width: 220px;
+		font-size: 15px;
+	}
+	.review p {
+		font-size: 19px;
+	}
+
+	.stars {
+		font-size: 20px;
+	}
+
+	.navButtons {
+		gap: 245px;
+		margin-top: -240px;
+		margin-bottom: 180px;
+	}
+
+	.arrow {
+		font-size: 10px;
+		padding: 5px 10px;
+		margin: 0;
+	}
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+	.review {
+		margin: 35px 20px;
+	}
+
+	.review h1 {
+		font-size: 20px;
+	}
+
+	.review h2 {
+		width: 250px;
+		font-size: 17px;
+	}
+	.review p {
+		font-size: 20px;
+	}
+
+	.stars {
+		font-size: 20px;
+	}
+
+	.navButtons {
+		gap: 305px;
+		margin-top: -235px;
+		margin-bottom: 150px;
+	}
+
+	.arrow {
+		font-size: 10px;
+		padding: 5px 10px;
+		margin: 0;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+	.review {
+		margin: 50px 40px;
+	}
+
+	.review h1 {
+		font-size: 40px;
+	}
+
+	.review h2 {
+		width: 560px;
+		font-size: 25px;
+	}
+	.review p {
+		font-size: 25px;
+	}
+
+	.stars {
+		font-size: 28px;
+	}
+
+	.navButtons {
+		gap: 585px;
+		margin-top: -220px;
+		margin-bottom: 180px;
+	}
+
+	.arrow {
+		font-size: 18px;
+		padding: 5px 13px;
+		margin: 9px;
+	}
 }

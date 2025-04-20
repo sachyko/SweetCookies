@@ -13,13 +13,13 @@
 	font-family: "Nunito Sans", serif;
 	color: #674831;
 	font-style: italic;
-	font-size: 20px;
+	font-size: 25px;
 	text-align: center;
 }
 
 .cookiesInfo img {
 	height: 450px;
-	width: 100%;
+	/* width: 100%; */
 	/* margin-top: -px; */
 	border-radius: 25px;
 	border: 5px solid #d8c6b0;
@@ -28,6 +28,9 @@
 
 .cookiesData {
 	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-left: 0;
 }
 
 .cookiesData h2 {
@@ -45,12 +48,222 @@
 }
 
 .textSection {
-	margin-right: 100px;
+	margin: 40px 70px 0 70px;
+	/* margin-right: 100px; */
 	margin-top: 40px;
-	/* background-color: #e0d0be; */
 	background-color: #d8c6b0;
-	/* background-color: #cbb9a3; */
-	/* background-color: #b7a087; */
 	border-radius: 25px;
-	margin-left: 90px;
+	/* margin-left: 70px; */
+	overflow-y: auto;
+	border-radius: 25px;
+	width: 750px;
+	height: 430px;
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+	.cookiesInfo {
+		margin: 5px 20px;
+	}
+
+	.cookiesInfo h1 {
+		font-size: 15px;
+	}
+
+	.cookiesInfo p {
+		font-size: 11px;
+	}
+	.cookiesData {
+		margin-left: -30px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		width: 1000px; /* or min-width: 900px; */
+	}
+	.cookiesInfo img {
+		height: 150px;
+		border-radius: 25px;
+		border: 2px solid #d8c6b0;
+		margin-top: 15px;
+	}
+	.cookiesData h2 {
+		font-size: 15px;
+		padding-top: 10px;
+		padding-left: 20px;
+		margin: 0;
+	}
+	.cookiesData p {
+		width: 130px;
+		text-align: left;
+		padding-left: 10px;
+		font-size: 11px;
+		margin: 0;
+		margin: 10px 10px;
+	}
+	.textSection {
+		margin-right: 10px;
+		margin-left: 5px;
+		margin-top: 10px;
+		/* background-color: #e0d0be; */
+		background-color: #d8c6b0;
+		width: 155px;
+		height: 230px;
+		overflow-y: auto;
+		border-radius: 25px;
+
+		/* box-sizing: border-box; */
+	}
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+	.cookiesInfo {
+		margin: 5px 20px;
+	}
+
+	.cookiesInfo h1 {
+		font-size: 19px;
+	}
+
+	.cookiesInfo p {
+		font-size: 13px;
+	}
+	.cookiesData {
+		margin-left: -30px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		width: 1000px; /* or min-width: 900px; */
+	}
+	.cookiesInfo img {
+		height: 180px;
+		border-radius: 25px;
+		border: 3px solid #d8c6b0;
+		margin-top: 15px;
+	}
+	.cookiesData h2 {
+		font-size: 19px;
+		padding-top: 10px;
+		padding-left: 20px;
+		margin: 0;
+	}
+	.cookiesData p {
+		width: 130px;
+		text-align: left;
+		padding-left: 10px;
+		font-size: 13px;
+		margin: 0;
+		margin: 10px 10px;
+	}
+	.textSection {
+		margin: 10px 15px 0 11px;
+		/* background-color: #e0d0be; */
+		background-color: #d8c6b0;
+		width: 168px;
+		height: 230px;
+		overflow-y: auto;
+		border-radius: 25px;
+
+		/* box-sizing: border-box; */
+	}
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+	.cookiesInfo {
+		margin: 5px 20px;
+	}
+
+	.cookiesInfo h1 {
+		font-size: 20px;
+	}
+
+	.cookiesInfo p {
+		font-size: 15px;
+	}
+	.cookiesData {
+		margin-left: -30px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		width: 1000px; /* or min-width: 900px; */
+	}
+	.cookiesInfo img {
+		height: 210px;
+		border-radius: 25px;
+		border: 4px solid #d8c6b0;
+		margin-top: 15px;
+	}
+	.cookiesData h2 {
+		font-size: 20px;
+		padding-top: 10px;
+		padding-left: 20px;
+		margin: 0;
+	}
+	.cookiesData p {
+		width: 130px;
+		text-align: left;
+		padding-left: 10px;
+		font-size: 15px;
+
+		margin: 10px 10px;
+	}
+	.textSection {
+		margin: 10px 15px 0 11px;
+		/* background-color: #e0d0be; */
+		background-color: #d8c6b0;
+		width: 185px;
+		height: 230px;
+		overflow-y: auto;
+		border-radius: 25px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+	.cookiesInfo {
+		margin: 100px 40px;
+	}
+	.cookiesInfo h1 {
+		font-size: 40px;
+	}
+
+	.cookiesInfo img {
+		height: 350px;
+		border-radius: 25px;
+		border: 5px solid #d8c6b0;
+		padding: 7px;
+	}
+	.cookiesData {
+		margin-left: -30px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		width: 1000px; /* or min-width: 900px; */
+	}
+	.cookiesInfo img {
+		height: 300px;
+		border-radius: 25px;
+		border: 4px solid #d8c6b0;
+		margin-top: 15px;
+	}
+	.cookiesData h2 {
+		font-size: 23px;
+		padding-top: 10px;
+		padding-left: 20px;
+		margin: 0;
+	}
+	.cookiesData p {
+		width: 350px;
+		text-align: left;
+		padding-left: 10px;
+		font-size: 17px;
+
+		margin: 10px 10px;
+	}
+	.textSection {
+		margin: 10px 15px 0 11px;
+		/* background-color: #e0d0be; */
+		background-color: #d8c6b0;
+		width: 400px;
+		height: 230px;
+		overflow-y: auto;
+		border-radius: 25px;
+	}
 }

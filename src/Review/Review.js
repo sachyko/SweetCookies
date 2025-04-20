@@ -27,7 +27,9 @@ const reviews = [
 		location: "Kanagawa, Japan",
 	},
 	{
-		review: <>Among all the flavor, the chocolate chip cookie is the BEST!</>,
+		review: (
+			<>" Among all the flavor, the chocolate chip cookie is the BEST! "</>
+		),
 		name: "Tetsu",
 		location: "Tokorozawa, Japan",
 	},

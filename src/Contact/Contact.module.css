@@ -1,5 +1,5 @@
 .contact {
-	margin: 100px 50px;
+	margin: 75px 50px;
 }
 
 .contactContainer {
@@ -9,7 +9,7 @@
 }
 .contact h2 {
 	font-family: "Libre Baskerville", serif;
-	color: #674831;
+	color: #3d1f14;
 	font-size: 40px;
 }
 
@@ -25,13 +25,13 @@
 }
 .socials p {
 	font-family: "Nunito Sans", serif;
-	color: #674831;
+	color: #825a3c;
 	font-size: 23px;
 }
 
 .socials h3 {
 	font-family: "EB Garamond", serif;
-	color: #3d1f14;
+	color: #674831;
 	font-size: 45px;
 }
 
@@ -56,7 +56,7 @@
 
 .contactForm textarea,
 .contactForm input {
-	width: 95%;
+	width: 97%;
 	padding: 10px;
 	margin-bottom: 20px;
 	border: 1px solid #ccc;
@@ -100,4 +100,253 @@
 
 .contactForm h2 {
 	text-align: left;
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+	.contact {
+		margin: 0 20px;
+	}
+
+	.contactContainer {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.contact h2 {
+		font-size: 15px;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	.socials p {
+		font-size: 12px;
+	}
+
+	.socials h3 {
+		font-size: 15px;
+	}
+	.tagline {
+		width: 100%;
+		margin: 0 auto 10px auto;
+		font-size: 14px;
+		padding: 0 10px;
+		text-align: center;
+	}
+
+	.socials {
+		margin: 10px auto;
+		text-align: center;
+	}
+
+	.contactForm {
+		margin: 0 auto;
+		padding: 15px;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.contactForm h2 {
+		font-size: 20px;
+		text-align: center;
+	}
+
+	.contactForm button {
+		font-size: 15px;
+		padding: 12px 0;
+		width: 90%;
+		margin: 5px 10px;
+	}
+
+	.contactForm textarea,
+	.contactForm input {
+		width: 92%;
+	}
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+	.contact {
+		margin: 0px 20px;
+	}
+
+	.contactContainer {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.contact h2 {
+		font-size: 19px;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	.socials p {
+		font-size: 15px;
+	}
+
+	.socials h3 {
+		font-size: 19px;
+	}
+	.tagline {
+		width: 100%;
+		margin: 0 auto 10px auto;
+		font-size: 15px;
+		padding: 0 10px;
+		text-align: center;
+	}
+
+	.socials {
+		margin: 13px auto;
+		text-align: center;
+	}
+
+	.contactForm {
+		margin: 0 auto;
+		padding: 15px;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.contactForm h2 {
+		font-size: 23px;
+		text-align: center;
+	}
+
+	.contactForm button {
+		font-size: 15px;
+		padding: 13px 0;
+		width: 90%;
+		margin: 5px 15px;
+	}
+	.contactForm textarea,
+	.contactForm input {
+		width: 93%;
+	}
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+	.contact {
+		margin: 0px 20px;
+	}
+
+	.contactContainer {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.contact h2 {
+		font-size: 20px;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	.socials p {
+		font-size: 17px;
+	}
+
+	.socials h3 {
+		font-size: 24px;
+	}
+	.tagline {
+		width: 100%;
+		margin: 0 auto 10px auto;
+		font-size: 17px;
+		padding: 0 10px;
+		text-align: center;
+	}
+
+	.socials {
+		margin: 13px auto;
+		text-align: center;
+	}
+
+	.contactForm {
+		margin: 0 auto;
+		padding: 15px;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.contactForm h2 {
+		font-size: 25px;
+		text-align: center;
+	}
+
+	.contactForm button {
+		font-size: 17px;
+		padding: 13px 0;
+		width: 90%;
+		margin: 5px 15px;
+	}
+	.contactForm textarea,
+	.contactForm input {
+		width: 94%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+	.contact {
+		margin: 75px 40px;
+	}
+
+	.contactContainer {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		flex-wrap: wrap;
+	}
+	.contact h2 {
+		font-size: 40px;
+	}
+
+	.tagline {
+		width: 350px;
+		padding-bottom: 10px;
+		margin-left: 5px;
+	}
+
+	.socials {
+		margin-left: 5px;
+		margin-top: 2px;
+	}
+	.socials p {
+		font-size: 20px;
+	}
+
+	.socials h3 {
+		font-size: 40px;
+	}
+
+	.socials i {
+		margin-right: 5px;
+	}
+
+	/* contact form styles */
+	.contactForm {
+		padding: 20px;
+		border-radius: 10px;
+		margin-top: -250px;
+		margin-right: -20px;
+	}
+
+	.contactForm label {
+		display: block;
+		margin-bottom: 8px;
+	}
+
+	.contactForm textarea,
+	.contactForm input {
+		width: 94%;
+		padding: 10px;
+		margin-bottom: 20px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+	}
+
+	.contactForm button {
+		font-size: 20px;
+		padding: 15px 80px;
+	}
+
+	.contactForm h2 {
+		text-align: left;
+	}
 }
