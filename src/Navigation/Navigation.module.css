@@ -80,3 +80,23 @@
 		margin: 14px 20px;
 	}
 }
+
+@media (min-width: 2560px) {
+	.navbar {
+		margin: 10px 50px 5px 50px;
+	}
+
+	.navbar img {
+		height: 200px;
+		margin: 10px 30px;
+		border-radius: 50%;
+	}
+
+	.navlinks {
+		font-size: 45px;
+	}
+
+	.navlinks li {
+		padding: 5px 12px;
+	}
+}

@@ -1,6 +1,6 @@
 .hero {
 	display: flex;
-	margin: 40px 50px;
+	padding: 40px 50px;
 }
 
 .hero img {
@@ -46,7 +46,7 @@
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
 	font-family: "Libre Baskerville", serif;
 	color: #dac1b1;
-	font-size: 15px;
+	font-size: 20px;
 	padding: 15px 60px;
 	text-decoration: none;
 	align-self: center;
@@ -65,7 +65,7 @@
 
 @media (min-width: 320px) and (max-width: 374px) {
 	.hero {
-		margin: 10px 20px;
+		padding: 0 20px 24px 20px;
 	}
 	.hero article {
 		margin-left: 2px;
@@ -98,31 +98,32 @@
 
 @media (min-width: 375px) and (max-width: 424px) {
 	.hero {
-		margin: 10px 20px;
+		/* margin: 50px 20px; */
+		padding: 0 20px 24px 20px;
 	}
 	.hero article {
 		margin-left: 5px;
 	}
 
 	.hero h1 {
-		font-size: 20px;
-		width: 150px;
+		font-size: 17px;
+		width: 180px;
 	}
 
 	.hero p {
-		font-size: 14px;
-		width: 140px;
+		font-size: 13px;
+		width: 165px;
 		margin-left: 5px;
 	}
 
 	.hero img {
-		height: 170px;
-		margin-left: 13px;
-		margin-top: 90px;
+		height: 150px;
+		margin-left: 4px;
+		margin-top: 45px;
 	}
 
 	.hero button {
-		font-size: 13px;
+		font-size: 11px;
 		margin-left: 5px;
 		margin-top: 2px;
 		padding: 10px 15px;
@@ -131,31 +132,32 @@
 
 @media (min-width: 425px) and (max-width: 767px) {
 	.hero {
-		margin: 10px 20px;
+		/* padding: 10px 20px; */
+		padding: 0 20px 24px 20px;
 	}
 	.hero article {
 		margin-left: 5px;
 	}
 
 	.hero h1 {
-		font-size: 20px;
+		font-size: 19px;
 		width: 200px;
 	}
 
 	.hero p {
-		font-size: 16px;
+		font-size: 15px;
 		width: 190px;
 		margin-left: 5px;
 	}
 
 	.hero img {
-		height: 190px;
-		margin-left: -3px;
-		margin-top: 90px;
+		height: 180px;
+		margin-left: 5px;
+		margin-top: 55px;
 	}
 
 	.hero button {
-		font-size: 15px;
+		font-size: 12px;
 		margin-left: 5px;
 		margin-top: 2px;
 		padding: 10px 15px;
@@ -164,7 +166,7 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
 	.hero {
-		margin: 40px 20px;
+		padding: 40px 20px;
 	}
 
 	.hero h1 {
@@ -187,5 +189,61 @@
 		margin-left: 39px;
 		margin-top: 2px;
 		padding: 10px 15px;
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+	.hero {
+		padding: 40px 40px;
+	}
+	.hero h1 {
+		font-size: 45px;
+		width: 545px;
+	}
+
+	.hero p {
+		width: 470px;
+		margin-left: 65px;
+		font-size: 25px;
+	}
+	.hero img {
+		height: 400px;
+		margin-left: 2px;
+	}
+	.hero button {
+		margin-left: 58px;
+		margin-top: 2px;
+		padding: 10px 15px;
+	}
+}
+
+@media (min-width: 2560px) {
+	.hero {
+		padding: 10px 50px 60px 50px;
+		justify-content: space-between;
+		align-content: center;
+	}
+	.hero article {
+		margin-left: 130px;
+	}
+	.hero h1 {
+		font-size: 65px;
+		width: 1050px;
+	}
+
+	.hero p {
+		margin-left: 65px;
+		font-size: 45px;
+		width: 1050px;
+	}
+	.hero img {
+		height: 850px;
+		margin-right: 200px;
+	}
+	.hero button {
+		margin-left: 55px;
+		padding: 29px 105px;
+		font-size: 35px;
+		border-radius: 45px;
 	}
 }

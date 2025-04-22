@@ -1,5 +1,7 @@
 .feature {
-	margin: 100px 50px;
+	padding: 5px 50px;
+	background-color: #e7d4c3;
+	margin: 0 auto;
 }
 
 .feature h1 {
@@ -40,7 +42,7 @@
 
 .feature1 p,
 .feature2 p,
-.feature2 p {
+.feature3 p {
 	font-family: "Nunito Sans", serif;
 	color: #674831;
 	font-size: 22px;
@@ -49,17 +51,20 @@
 
 .feature i {
 	font-size: 25px;
-	color: #b7a087;
+	color: #8b420f;
+	/* color: #b7a087; */
 }
 
 @media (min-width: 320px) and (max-width: 374px) {
 	.feature {
-		margin: 40px 20px;
+		padding: 5px 20px;
+		background-color: #e7d4c3;
+		margin: 0 auto;
 	}
 
 	.feature h1 {
 		font-size: 15px;
-		width: 200px;
+		width: 180px;
 	}
 
 	.feature p {
@@ -74,7 +79,7 @@
 
 	.feature1 p,
 	.feature2 p,
-	.feature2 p {
+	.feature3 p {
 		font-size: 10px;
 		width: 80px;
 	}
@@ -90,12 +95,14 @@
 
 @media (min-width: 375px) and (max-width: 424px) {
 	.feature {
-		margin: 40px 20px;
+		padding: 5px 20px;
+		background-color: #e7d4c3;
+		margin: 0 auto;
 	}
 
 	.feature h1 {
 		font-size: 19px;
-		width: 290px;
+		width: 200px;
 	}
 
 	.feature p {
@@ -110,7 +117,7 @@
 
 	.feature1 p,
 	.feature2 p,
-	.feature2 p {
+	.feature3 p {
 		font-size: 13px;
 		width: 105px;
 	}
@@ -126,7 +133,9 @@
 
 @media (min-width: 425px) and (max-width: 767px) {
 	.feature {
-		margin: 40px 20px;
+		padding: 5px 20px;
+		background-color: #e7d4c3;
+		margin: 0 auto;
 	}
 
 	.feature h1 {
@@ -146,7 +155,7 @@
 
 	.feature1 p,
 	.feature2 p,
-	.feature2 p {
+	.feature3 p {
 		font-size: 15px;
 		width: 105px;
 	}
@@ -162,12 +171,16 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
 	.feature {
-		margin: 100px 40px;
+		/* margin: 50px 40px; */
+		padding: 5px 40px;
+		background-color: #e7d4c3;
+		margin: 0 auto;
 	}
 
 	.feature h1 {
 		font-family: "Libre Baskerville", serif;
 		font-size: 40px;
+		width: 350px;
 	}
 
 	.feature p {
@@ -184,8 +197,66 @@
 
 	.feature1 p,
 	.feature2 p,
-	.feature2 p {
+	.feature3 p {
 		font-size: 18px;
 		width: 210px;
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+	.feature {
+		padding: 5px 50px;
+		background-color: #e7d4c3;
+		margin: 0 auto;
+	}
+
+	.feature h1 {
+		font-family: "Libre Baskerville", serif;
+		font-size: 45px;
+	}
+
+	.feature p {
+		font-size: 25px;
+	}
+
+	.feature1 h2,
+	.feature2 h2,
+	.feature3 h2 {
+		font-size: 30px;
+	}
+
+	.feature1 p,
+	.feature2 p,
+	.feature3 p {
+		font-size: 20px;
+		width: 250px;
+	}
+}
+
+@media (min-width: 2560px) {
+	.feature h1 {
+		width: 800px;
+		font-size: 65px;
+	}
+
+	.feature p {
+		font-size: 45px;
+	}
+
+	.feature1 h2,
+	.feature2 h2,
+	.feature3 h2 {
+		font-size: 53px;
+	}
+
+	.feature1 p,
+	.feature2 p,
+	.feature3 p {
+		font-size: 40px;
+		width: 600px;
+	}
+
+	.feature i {
+		font-size: 40px;
 	}
 }

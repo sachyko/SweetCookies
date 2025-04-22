@@ -1,9 +1,9 @@
 .cookiesInfo {
-	margin: 100px 50px;
+	padding: 10px 50px 40px 50px;
 }
 
 .circle {
-	background-color: #b7a087;
+	background-color: #ae7b57;
 	border: none;
 	border-radius: 50%;
 	margin: 15px;
@@ -15,47 +15,45 @@
 	display: flex;
 	justify-content: flex-end;
 	margin-right: 190px;
-	margin-top: -100px;
+	margin-top: 10px;
 }
 
 .circle:hover {
-	background-color: #9f8763; /* Slightly darker shade for hover */
+	background-color: #a2683f; /* Slightly darker shade for hover */
 	transform: scale(1.2); /* Slightly increase size */
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
 }
 
 @media (min-width: 320px) and (max-width: 374px) {
 	.cookiesInfo {
-		margin: 20px 20px;
+		padding: 20px 20px;
 	}
 	.circleNavigation {
 		display: flex;
 		justify-content: center;
-		margin-top: -32px;
-		margin-right: -170px;
+		margin-top: 2px;
+		margin-right: -155px;
 	}
 
 	.circle {
-		background-color: #b7a087;
-		margin: 7px;
-		height: 13px;
-		width: 13px;
+		margin: 6px;
+		height: 12px;
+		width: 12px;
 	}
 }
 
 @media (min-width: 375px) and (max-width: 424px) {
 	.cookiesInfo {
-		margin: 20px 20px;
+		padding: 20px 20px;
 	}
 	.circleNavigation {
 		display: flex;
 		justify-content: center;
-		margin-top: -19px;
+		margin-top: 2px;
 		margin-right: -180px;
 	}
 
 	.circle {
-		background-color: #b7a087;
 		margin: 9px;
 		height: 13px;
 		width: 13px;
@@ -64,17 +62,16 @@
 
 @media (min-width: 425px) and (max-width: 767px) {
 	.cookiesInfo {
-		margin: 40px 20px;
+		padding: 40px 20px;
 	}
 	.circleNavigation {
 		display: flex;
 		justify-content: center;
-		margin-top: -5px;
+		margin-top: 2px;
 		margin-right: -195px;
 	}
 
 	.circle {
-		background-color: #b7a087;
 		margin: 9px;
 		height: 13px;
 		width: 13px;
@@ -83,15 +80,40 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
 	.cookiesInfo {
-		margin: 40px 40px;
+		padding: 20px 40px;
 	}
 	.circleNavigation {
-		margin-right: 32px;
+		margin-right: 35px;
+		margin-top: 2px;
 	}
 
 	.circle {
 		margin: 15px;
 		height: 17px;
 		width: 17px;
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+	.cookiesInfo {
+		padding: 20px 50px;
+	}
+	.circleNavigation {
+		margin-right: 70px;
+		margin-top: 2px;
+	}
+}
+
+@media (min-width: 2560px) {
+	.circle {
+		border-radius: 50%;
+		margin: 25px;
+		height: 40px;
+		width: 40px;
+	}
+
+	.circleNavigation {
+		margin-right: 300px;
+		margin-top: 10px;
 	}
 }

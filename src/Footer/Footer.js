@@ -27,22 +27,22 @@ const Footer = () => {
 				<div className={styles.socialMedia}>
 					<h3>Stay Connected</h3>
 					<li>
-						<i class="fa-solid fa-envelope-circle-check"></i>
+						<i className="fa-solid fa-envelope-circle-check"></i>
 						SweetStreetjpn@gmail.com
 					</li>
 					<li>
-						<i class="fa-solid fa-phone"></i>+8170-1428-1515
+						<i className="fa-solid fa-phone"></i>+8170-1428-1515
 					</li>
 					<li>
-						<i class="fa-brands fa-facebook"></i>
+						<i className="fa-brands fa-facebook"></i>
 						Sweet Street
 					</li>
 					<li>
-						<i class="fa-brands fa-instagram"></i>
+						<i className="fa-brands fa-instagram"></i>
 						SweetStreetjpn
 					</li>
 					<li>
-						<i class="fa-brands fa-tiktok"></i>
+						<i className="fa-brands fa-tiktok"></i>
 						@sweet.street.jpn
 					</li>
 				</div>

@@ -34,9 +34,7 @@ const Hero = () => {
 	return (
 		<div className={styles.hero}>
 			<article>
-				<h1>
-					<Typewriter text={fullText} />
-				</h1>
+				<Typewriter text={fullText} />
 
 				<p>
 					"Discover a delightful range of cookies from classic chocolate chip to

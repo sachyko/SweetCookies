@@ -15,7 +15,7 @@ const Contact = () => {
 	};
 
 	useEffect(() => {
-		const textarea = document.getElementById("message");
+		const textarea = document.getElementById("messageInput");
 		textarea.style.height = "auto";
 		textarea.style.height = `${textarea.scrollHeight}px`;
 	}, [formData.message]);
@@ -34,54 +34,55 @@ const Contact = () => {
 				<div className={styles.socials}>
 					<h3>Reach Us Anytime</h3>
 					<p>
-						<i class="fa-solid fa-envelope-circle-check"></i>
+						<i className="fa-solid fa-envelope-circle-check"></i>
 						SweetStreetjpn@gmail.com
 					</p>
 					<p>
-						<i class="fa-solid fa-phone"></i>+8170-1428-1515
+						<i className="fa-solid fa-phone"></i>+8170-1428-1515
 					</p>
 					<p>
-						<i class="fa-brands fa-facebook"></i>
+						<i className="fa-brands fa-facebook"></i>
 						Sweet Street
 					</p>
 					<p>
-						<i class="fa-brands fa-instagram"></i>
+						<i className="fa-brands fa-instagram"></i>
 						SweetStreetjpn
 					</p>
 					<p>
-						<i class="fa-brands fa-tiktok"></i>
+						<i className="fa-brands fa-tiktok"></i>
 						@sweet.street.jpn
 					</p>
 				</div>
-
 				<div className={styles.contactForm}>
 					<h2>Contact Us</h2>
 					<form onSubmit={handleSubmit}>
-						<label>Name</label>
+						<label htmlFor="nameInput">Name</label>
 						<input
 							type="text"
 							name="name"
+							id="nameInput"
 							value={formData.name}
 							onChange={handleChange}
-							required
+							autoComplete="name"
 						/>
 
-						<label>Email</label>
+						<label htmlFor="emailInput">Email</label>
 						<input
 							type="email"
 							name="email"
+							id="emailInput"
 							value={formData.email}
 							onChange={handleChange}
-							required
+							autoComplete="email"
 						/>
 
-						<label>Message</label>
+						<label htmlFor="messageInput">Message</label>
 						<textarea
-							id="message"
 							name="message"
+							id="messageInput"
 							value={formData.message}
 							onChange={handleChange}
-							required
+							autoComplete="off"
 						></textarea>
 
 						<button type="submit" className={styles.submit}>

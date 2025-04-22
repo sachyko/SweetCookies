@@ -219,36 +219,44 @@ const OrderForm = () => {
 
 				<div className={styles.userFieldContainer}>
 					<div className={styles.userFields}>
-						<label htmlFor="name">Name: </label>
+						<label htmlFor="nameInput">Name: </label>
 						<input
 							type="text"
 							name="name"
+							id="nameInput"
 							value={order.name}
 							onChange={handleInputChange}
+							autoComplete="name"
 						/>
 
-						<label htmlFor="address">Address: </label>
+						<label htmlFor="addressInput">Address: </label>
 						<input
 							type="text"
 							name="address"
+							id="addressInput"
 							value={order.address}
 							onChange={handleInputChange}
+							autoComplete="street-address"
 						/>
 
-						<label htmlFor="email">Email: </label>
+						<label htmlFor="emailInput">Email: </label>
 						<input
 							type="email"
 							name="email"
+							id="emailInput"
 							value={order.email}
 							onChange={handleInputChange}
+							autoComplete="email"
 						/>
 
-						<label htmlFor="phone">Phone #: </label>
+						<label htmlFor="phoneInput">Phone #: </label>
 						<input
 							type="number"
 							name="phone"
+							id="phoneInput"
 							value={order.phone}
 							onChange={handleInputChange}
+							autoComplete="tel"
 						/>
 					</div>
 

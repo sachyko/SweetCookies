@@ -442,3 +442,153 @@
 		font-size: 17px;
 	}
 }
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+	.cookieForm {
+		margin: 50px auto;
+		padding: 20px;
+		height: auto;
+		border-radius: 30px;
+		max-width: 80%;
+	}
+
+	.cookieForm h1 {
+		font-size: 45px;
+	}
+
+	.cookieForm h3 {
+		font-size: 25px;
+	}
+
+	.cookieForm p {
+		font-size: 25px;
+		margin-bottom: 25px;
+	}
+
+	.orderSectionContainer {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.userFieldContainer {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-top: 20px;
+	}
+
+	.userFields {
+		flex: 1;
+		min-width: 280px;
+		margin: 0 10px;
+	}
+
+	.userFields input {
+		width: 100%;
+		font-size: 22px;
+		padding: 10px 6px;
+	}
+
+	.userFieldContainer button {
+		font-size: 22px;
+		padding: 14px 40px;
+		margin-top: 20px;
+		align-self: center;
+		margin-left: 50px;
+	}
+
+	.totalPrice {
+		font-size: 25px;
+		text-align: left;
+		margin-left: 30px;
+		margin-top: 20px;
+	}
+}
+
+@media (min-width: 1440px) and (max-width: 2559px) {
+	.userFields input {
+		width: 118%;
+	}
+}
+
+@media (min-width: 2560px) {
+	.cookieForm {
+		margin: 100px 50px;
+		background-color: #d0b396;
+		border-radius: 40px;
+		height: 1150px;
+	}
+	.cookieForm h1 {
+		font-size: 55px;
+		padding-top: 20px;
+	}
+	.cookieForm p {
+		font-size: 45px;
+		text-align: center;
+		margin-bottom: 30px; /* Added space below the paragraph */
+	}
+
+	.cookieForm img {
+		width: 75px;
+		padding-right: 10px;
+	}
+
+	.cookieForm button {
+		margin: 5px;
+	}
+
+	.cookieForm h3 {
+		font-family: "EB Garamond", serif;
+		color: #3d1f14;
+		font-size: 43px;
+	}
+
+	.cookieForm span {
+		font-size: 28px;
+		margin: 0 10px;
+	}
+
+	.cookieForm button {
+		padding: 20px 20px;
+		border-radius: 15px;
+		font-size: 40px;
+	}
+
+	.orderSection {
+		padding-left: 35px;
+	}
+
+	.userFields {
+		margin-top: 70px;
+	}
+
+	.userFields label {
+		font-size: 40px;
+	}
+
+	.userFields input {
+		border-bottom: 3px solid #ac746c;
+		width: 100%;
+		font-size: 40px;
+	}
+
+	.mixPack p {
+		font-size: 40px;
+		font-family: "Nunito Sans", serif;
+		color: #674831;
+	}
+
+	.userFieldContainer button {
+		border-radius: 40px;
+		color: #dac1b1;
+		font-size: 40px;
+		padding: 15px 60px;
+		margin-bottom: 90px;
+	}
+
+	.totalPrice {
+		font-size: 40px;
+	}
+}

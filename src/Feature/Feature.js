@@ -20,7 +20,7 @@ const Feature = () => {
 					viewport={{ once: false }}
 					transition={{ duration: 2 }}
 				>
-					<i class="fa-solid fa-cookie-bite"></i>
+					<i className="fa-solid fa-cookie-bite"></i>
 					<h2>Choose Your Perfect Size</h2>
 					<p>Select from our generous big size or petite small packs.</p>
 				</motion.div>
@@ -32,7 +32,7 @@ const Feature = () => {
 					viewport={{ once: false }}
 					transition={{ duration: 2, delay: 0.5 }}
 				>
-					<i class="fa-solid fa-cookie-bite"></i>
+					<i className="fa-solid fa-cookie-bite"></i>
 					<h2>Affordable Treats for Every Occasion</h2>
 					<p>Enjoy premium cookies without breaking the bank.</p>
 				</motion.div>
@@ -44,7 +44,7 @@ const Feature = () => {
 					viewport={{ once: false }}
 					transition={{ duration: 2, delay: 1 }}
 				>
-					<i class="fa-solid fa-cookie-bite"></i>
+					<i className="fa-solid fa-cookie-bite"></i>
 					<h2>Order Now for Fresh Cookie Delivery</h2>
 					<p>Experience the joy of cookie delivered to your door.</p>
 				</motion.div>
