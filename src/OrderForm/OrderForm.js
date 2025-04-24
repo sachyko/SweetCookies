@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import styles from "./OrderForm.module.css";
 
+import emailjs from "emailjs-com";
+
 //photos
 
 import assorted from "./pictures/4flavors.jpg";
@@ -10,11 +12,13 @@ import peanut from "./pictures/peanut.jpg";
 import matcha from "./pictures/sexymatchaform.jpg";
 
 const OrderForm = () => {
+	//Prices
 	const bigSizePrice = 250;
 	const petitePackPrice = 500;
 
+	//State to manage the entire order
 	const [order, setOrder] = useState({
-		bigSize: {},
+		bigSize: {}, //{flavorName: quantity}
 		petitePack: { Assorted: 0, MixAndMatch: 0 },
 		mixAndMatchFlavors: {
 			"Sexy Matcha": 0,
@@ -30,6 +34,7 @@ const OrderForm = () => {
 
 	const [total, setTotal] = useState(0);
 
+	//flavors with images
 	const flavors = [
 		{ name: "Sexy Matcha", image: matcha },
 		{ name: "Peanut Butter Paradise", image: peanut },
@@ -37,6 +42,7 @@ const OrderForm = () => {
 		{ name: "Kokutou Caramel Crunch", image: caramel },
 	];
 
+	//automatically calculate total price when order changes
 	useEffect(() => {
 		const bigTotal = Object.values(order.bigSize).reduce(
 			(acc, count) => acc + count * bigSizePrice,
@@ -48,6 +54,7 @@ const OrderForm = () => {
 		setTotal(bigTotal + petiteTotal);
 	}, [order.bigSize, order.petitePack]);
 
+	//adjust the quantity of big size or assorted packs
 	const handleQualityChange = (type, flavor, amount) => {
 		setOrder((prev) => {
 			const updated = Math.max(0, (prev[type][flavor] || 0) + amount);
@@ -61,11 +68,13 @@ const OrderForm = () => {
 		});
 	};
 
+	//handle user input fields
 	const handleInputChange = (e) => {
 		const { name, value } = e.target;
 		setOrder((prevOrder) => ({ ...prevOrder, [name]: value }));
 	};
 
+	//change number of mix and match petite packs
 	const handlePackCountChange = (delta) => {
 		setOrder((prev) => {
 			const newCount = Math.max(0, prev.petitePack.MixAndMatch + delta);
@@ -93,6 +102,7 @@ const OrderForm = () => {
 		});
 	};
 
+	//adjust flavor section in Mix and Match
 	const handleMixAndMatchFlavorChange = (flavorName, delta) => {
 		setOrder((prev) => {
 			const updatedFlavors = { ...prev.mixAndMatchFlavors };
@@ -111,14 +121,70 @@ const OrderForm = () => {
 					mixAndMatchFlavors: updatedFlavors,
 				};
 			}
-			return prev;
+			return prev; //no change of limit exceeded
 		});
 	};
 
+	//formate flavors or sizes into strings for email template
+	const formatOrders = (obj) =>
+		Object.entries(obj)
+			.filter(([_, quantity]) => quantity > 0)
+			.map(([flavor, quantity]) => ({
+				flavor: String(flavor),
+				quantity: Number(quantity),
+			})) || [];
+
+	// console.log("Formatted Big Size Orders:", formatOrders(order.bigSize)); // Check
+	// console.log(
+	// 	"Formatted Mix and Match Orders:",
+	// 	formatOrders(order.mixAndMatchFlavors)
+	// );
+	//added: submit form and send email via EmailJs
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		alert("Order Submitted");
-		console.log(order);
+
+		// Simple validation to ensure required fields are filled
+		if (!order.name || !order.address || !order.email || !order.phone) {
+			alert("Please fill out all fields.");
+			return;
+		}
+
+		const finalTotal = !isNaN(total) ? total : 0;
+
+		const templateParams = {
+			cc_email: order.email,
+			name: order.name,
+			email: order.email,
+			phone: order.phone,
+			address: order.address,
+			total_price: finalTotal,
+			assorted_count: order.petitePack.Assorted || 0,
+			mix_and_match_count: order.petitePack.MixAndMatch || 0,
+			big_size_orders: formatOrders(order.bigSize)
+				.map((order) => `${order.flavor}: ${order.quantity}`)
+				.join(", "),
+			mix_and_match_flavors: formatOrders(order.mixAndMatchFlavors)
+				.map((order) => `${order.flavor}: ${order.quantity}`)
+				.join(", "),
+		};
+		// console.log(templateParams);
+		emailjs
+			.send(
+				"SweetStreetjpn@gmail.com",
+				"template_o4cjnpt",
+				templateParams,
+				"BDGo95mIObBFJPbM7"
+			)
+			.then(
+				(response) => {
+					console.log("SUCCESS!", response.status, response.text);
+					alert("Order Submitted and Email Sent!");
+				},
+				(err) => {
+					console.error("Failed...", err);
+					alert("Something went wrong. Please try again.");
+				}
+			);
 	};
 
 	return (

@@ -74,7 +74,7 @@
 	position: sticky;
 	gap: 1200px;
 	margin-top: -200px;
-	margin-bottom: 215px;
+	margin-bottom: 180px;
 	justify-content: center;
 }
 
@@ -148,7 +148,7 @@
 	.navButtons {
 		gap: 245px;
 		margin-top: -240px;
-		margin-bottom: 180px;
+		margin-bottom: 135px;
 	}
 
 	.arrow {
@@ -182,7 +182,7 @@
 	.navButtons {
 		gap: 305px;
 		margin-top: -235px;
-		margin-bottom: 150px;
+		margin-bottom: 140px;
 	}
 
 	.arrow {
@@ -216,7 +216,7 @@
 	.navButtons {
 		gap: 585px;
 		margin-top: -220px;
-		margin-bottom: 180px;
+		margin-bottom: 140px;
 	}
 
 	.arrow {
@@ -262,6 +262,7 @@
 
 	.navButtons {
 		gap: 780px;
+		margin-bottom: 140px;
 	}
 }
 
@@ -297,6 +298,6 @@
 		gap: 1900px;
 
 		margin-top: -260px;
-		margin-bottom: 415px;
+		margin-bottom: 380px;
 	}
 }

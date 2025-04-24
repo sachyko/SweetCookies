@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import styles from "./Contact.module.css";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
 	const [formData, setFormData] = useState({
@@ -19,12 +20,38 @@ const Contact = () => {
 		textarea.style.height = "auto";
 		textarea.style.height = `${textarea.scrollHeight}px`;
 	}, [formData.message]);
+
+	//handles form submission
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		console.log("Form submitted", formData);
-		//Reset
-		setFormData({ name: "", email: "", message: "" });
+
+		//Build the object to send to EmailJs
+		const emailData = {
+			name: formData.name,
+			email: formData.email,
+			message: formData.message,
+			time: new Date().toLocaleString(),
+		};
+
+		//send the email using Emailjs
+		emailjs
+			.send(
+				"SweetStreetjpn@gmail.com",
+				"template_jqzd6js",
+				emailData,
+				"BDGo95mIObBFJPbM7"
+			)
+			.then((response) => {
+				console.log("SUCCESS!", response.status, response.text);
+				alert("Message sent! We'll get back to you soon");
+				setFormData({ name: "", email: "", message: "" });
+			})
+			.catch((err) => {
+				console.error("FAILED to send the message", err);
+				alert("Oops! Something went wrong");
+			});
 	};
+
 	return (
 		<div className={styles.contact}>
 			<div className={styles.tagline}>
@@ -64,6 +91,7 @@ const Contact = () => {
 							value={formData.name}
 							onChange={handleChange}
 							autoComplete="name"
+							required
 						/>
 
 						<label htmlFor="emailInput">Email</label>

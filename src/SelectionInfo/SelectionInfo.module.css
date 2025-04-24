@@ -104,6 +104,14 @@
 	}
 }
 
+@media (min-width: 1440px) and (max-width: 2559px) {
+	.circleNavigation {
+		display: flex;
+		justify-content: flex-end;
+		margin-right: 125px;
+		margin-top: 10px;
+	}
+}
 @media (min-width: 2560px) {
 	.circle {
 		border-radius: 50%;
