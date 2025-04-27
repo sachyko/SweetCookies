@@ -3,13 +3,25 @@ import React, { useEffect, useState } from "react";
 import styles from "./Contact.module.css";
 import emailjs from "emailjs-com";
 
+const serviceID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+const contactTemplateID = process.env.REACT_APP_EMAILJS_CONTACT_TEMPLATE_ID;
 const Contact = () => {
 	const [formData, setFormData] = useState({
 		name: "",
 		email: "",
 		message: "",
 	});
-
+	useEffect(() => {
+		if (
+			publicKey &&
+			serviceID &&
+			contactTemplateID &&
+			process.env.REACT_APP_EMAILJS_USER_ID
+		) {
+			emailjs.init(process.env.REACT_APP_EMAILJS_USER_ID);
+		}
+	}, []);
 	const handleChange = (e) => {
 		const { name, value } = e.target;
 		setFormData((prev) => ({ ...prev, [name]: value }));
@@ -35,12 +47,7 @@ const Contact = () => {
 
 		//send the email using Emailjs
 		emailjs
-			.send(
-				"SweetStreetjpn@gmail.com",
-				"template_jqzd6js",
-				emailData,
-				"BDGo95mIObBFJPbM7"
-			)
+			.send(serviceID, contactTemplateID, emailData, publicKey)
 			.then((response) => {
 				console.log("SUCCESS!", response.status, response.text);
 				alert("Message sent! We'll get back to you soon");

@@ -11,7 +11,21 @@ import classic from "./pictures/mrclassicform.jpg";
 import peanut from "./pictures/peanut.jpg";
 import matcha from "./pictures/sexymatchaform.jpg";
 
+const serviceID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+const orderTemplateID = process.env.REACT_APP_EMAILJS_ORDER_TEMPLATE_ID;
+
 const OrderForm = () => {
+	useEffect(() => {
+		if (
+			publicKey &&
+			serviceID &&
+			orderTemplateID &&
+			process.env.REACT_APP_EMAILJS_USER_ID
+		) {
+			emailjs.init(process.env.REACT_APP_EMAILJS_USER_ID);
+		}
+	}, []);
 	//Prices
 	const bigSizePrice = 250;
 	const petitePackPrice = 500;
@@ -143,6 +157,10 @@ const OrderForm = () => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 
+		if (!hasOrder()) {
+			alert("Please add items to your order before submitting!");
+			return;
+		}
 		// Simple validation to ensure required fields are filled
 		if (!order.name || !order.address || !order.email || !order.phone) {
 			alert("Please fill out all fields.");
@@ -168,25 +186,30 @@ const OrderForm = () => {
 				.join(", "),
 		};
 		// console.log(templateParams);
-		emailjs
-			.send(
-				"SweetStreetjpn@gmail.com",
-				"template_o4cjnpt",
-				templateParams,
-				"BDGo95mIObBFJPbM7"
-			)
-			.then(
-				(response) => {
-					console.log("SUCCESS!", response.status, response.text);
-					alert("Order Submitted and Email Sent!");
-				},
-				(err) => {
-					console.error("Failed...", err);
-					alert("Something went wrong. Please try again.");
-				}
-			);
+
+		emailjs.send(serviceID, orderTemplateID, templateParams, publicKey).then(
+			(response) => {
+				console.log("SUCCESS!", response.status, response.text);
+				alert("Order Submitted and Email Sent!");
+			},
+			(err) => {
+				console.error("Failed...", err);
+				alert("Something went wrong. Please try again.");
+			}
+		);
 	};
 
+	const hasOrder = () => {
+		const hasBigSizeOrder = Object.values(order.bigSize).some(
+			(count) => count > 0
+		);
+		const hasPetitePackOrder =
+			order.petitePack.Assorted > 0 || order.petitePack.MixAndMatch > 0;
+		const hasMixAndMatchOrder = Object.values(order.mixAndMatchFlavors).some(
+			(count) => count > 0
+		);
+		return hasBigSizeOrder || hasPetitePackOrder || hasMixAndMatchOrder;
+	};
 	return (
 		<form className={styles.cookieForm} onSubmit={handleSubmit}>
 			<h1>Sweet Delights</h1>
